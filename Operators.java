@@ -87,7 +87,6 @@ class Operator {
         System.out.print("Enter an integer value to type cast: ");
         int y = scanner.nextInt();     
         float u = y;
-        double i = u;
         System.out.println("After Type Casting: " + u);
 
         scanner.close();
