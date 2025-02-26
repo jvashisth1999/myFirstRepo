@@ -7,6 +7,10 @@ class Operator {
         int a = scanner.nextInt();
         System.out.print("Enter second number (b): ");
         int b = scanner.nextInt();
+        System.out.print("Enter boolean value for c (true/false): ");
+        boolean c = scanner.nextBoolean();
+        System.out.print("Enter boolean value for d (true/false): ");
+        boolean d = scanner.nextBoolean();
         
         System.out.println();
 
@@ -29,10 +33,6 @@ class Operator {
 
         // Logical Operators
         System.out.println("Logical Operators:");
-        System.out.print("Enter boolean value for c (true/false): ");
-        boolean c = scanner.nextBoolean();
-        System.out.print("Enter boolean value for d (true/false): ");
-        boolean d = scanner.nextBoolean();
         System.out.println("And Operator (c && d): " + (c && d));
         System.out.println("Or Operator (c || d): " + (c || d));
         System.out.println("Not Operator (!c): " + (!c));
@@ -40,12 +40,10 @@ class Operator {
 
         // Bitwise Operators
         System.out.println("Bitwise Operators:");
-        System.out.print("Enter first binary number (e in decimal): ");
-        int e = scanner.nextInt();
-        System.out.print("Enter second binary number (f in decimal): ");
-        int f = scanner.nextInt();
-        System.out.println("AND Operator (e & f): " + (e & f));
-        System.out.println("OR Operator (e | f): " + (e | f));
+        System.out.println("AND Operator (a & b): " + (a & b));
+        System.out.println("OR Operator (a | b): " + (a | b));
+        System.out.println("XOR Operator (a ^ b) : " + (a ^ b));
+        System.out.println("NOT Operator (~a) : " + (~a));
         System.out.println();
 
         // Assignment Operators
@@ -59,8 +57,10 @@ class Operator {
         // Unary operators
         System.out.println("Unary Operators:");
         System.out.println("Post Increment of A: " + (++a));
+        System.out.println("After Post-increment, a: " + a);
         System.out.println("Pre Increment of A: " + (a++));
         System.out.println("Post Decrement of B: " + (--b));
+        System.out.println("After Post-decrement, b: " + b);
         System.out.println("Pre Decrement of B: " + (b--));
         System.out.println();
 
@@ -83,10 +83,8 @@ class Operator {
         System.out.println();
 
         // Type Cast Operator
-        System.out.println("Type Cast Operator:");
-        System.out.print("Enter an integer value to type cast: ");
-        int y = scanner.nextInt();     
-        float u = y;
+        System.out.println("Type Cast Operator:");  
+        float u = a;
         System.out.println("After Type Casting: " + u);
 
         scanner.close();
