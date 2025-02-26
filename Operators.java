@@ -80,6 +80,8 @@ class Operator {
         System.out.println("Shift Operator:");
         System.out.println("A shift left (a << 1): " + (a << 1));
         System.out.println("A shift right (a >> 1): " + (a >> 1));
+        System.out.println("A zero fill shift right (a >>> 1): " + (a >>> 1));
+        System.out.println("B zero fill shift right (b >>> 1): " + (b >>> 1));
         System.out.println();
 
         // Type Cast Operator
